@@ -1,0 +1,1 @@
+dofile(minetest.get_modpath("crafting").."/crafting.lua")
