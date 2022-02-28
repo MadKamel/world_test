@@ -188,13 +188,3 @@ bucket.register_liquid(
 	"Bucket of Water",
 	{water_bucket = 1}
 )
-
-bucket.register_liquid(
-	"default:river_water_source",
-	"default:river_water_flowing",
-	"bucket:bucket_river_water",
-	"bucket_river_water.png",
-	"Bucket of River Water",
-	{water_bucket = 1},
-	true
-)

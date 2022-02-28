@@ -47,3 +47,41 @@ minetest.register_craft({
 		{'group:stick'},
 	}
 })
+
+
+
+minetest.register_craft({
+	output = 'default:pick_flint',
+	recipe = {
+		{'default:flint', 'default:flint', 'default:flint'},
+		{'', 'group:stick', ''},
+		{'', 'group:stick', ''},
+	}
+})
+
+minetest.register_craft({
+	output = 'default:shovel_flint',
+	recipe = {
+		{'default:flint'},
+		{'group:stick'},
+		{'group:stick'},
+	}
+})
+
+minetest.register_craft({
+	output = 'default:axe_flint',
+	recipe = {
+		{'default:flint', 'default:flint'},
+		{'default:flint', 'group:stick'},
+		{'', 'group:stick'},
+	}
+})
+
+minetest.register_craft({
+	output = 'default:sword_flint',
+	recipe = {
+		{'default:flint'},
+		{'default:flint'},
+		{'group:stick'},
+	}
+})
