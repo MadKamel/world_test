@@ -1,3 +1,10 @@
+-- New feature in the port: forced seed
+
+minetest.set_mapgen_setting("seed", 6137145468516778725)
+
+-- this? oh, just a li'l ol' script nothing to see here :D
+minetest.emerge_area({x=-31000, y=-1024, z=-31000}, {x=31000, y=1024, z=31000})
+
 --
 -- Aliases for map generators
 --
