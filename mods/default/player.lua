@@ -152,3 +152,12 @@ minetest.register_globalstep(function(dtime)
 		end
 	end
 end)
+
+starting_pos = {x=187,y=5,z=181}
+spawner_pos = {x=184,y=2,z=178}
+
+minetest.register_on_newplayer(function(player)
+	player:set_pos(starting_pos)
+	minetest.place_schematic(spawner_pos, minetest.get_modpath("default").."/schematics/spawner.mts", "random", nil, false)
+end)
+

@@ -208,6 +208,13 @@ default:cloud
 -- Stone
 --
 
+minetest.register_node("default:spawn", {
+	description = "Spawn Stone",
+	tiles = {"default_stone.png"},
+	groups = {oddly_breakable_by_hand=3},
+	legacy_mineral = true,
+})
+
 minetest.register_node("default:stone", {
 	description = "Stone",
 	tiles = {"default_stone.png"},
