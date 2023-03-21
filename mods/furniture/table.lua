@@ -1,3 +1,5 @@
+# FIRST UP: TABLE DEFINITIONS
+
 minetest.register_node("furniture:wood_table", {
 	description = "Wooden Table",
 	tiles = {"default_wood.png"},
@@ -92,4 +94,44 @@ minetest.register_node("furniture:clay_table", {
 		},
 	},
 	groups = {dig_immediate = 2, falling_node = 1, flammable = 0},
+})
+
+
+
+# NEXT UP: CRAFTING DEFINITIONS
+
+minetest.register_craft({
+	output = "furniture:wood_table",
+	recipe = {
+		{'default:wood', 'default:wood', 'default:wood'},
+		{'group:stick', '', 'group:stick'},
+		{'group:stick', '', 'group:stick'},
+	}
+})
+
+minetest.register_craft({
+	output = "furniture:pine_wood_table",
+	recipe = {
+		{'default:pine_wood', 'default:pine_wood', 'default:pine_wood'},
+		{'group:stick', '', 'group:stick'},
+		{'group:stick', '', 'group:stick'},
+	}
+})
+
+minetest.register_craft({
+	output = "furniture:aspen_wood_table",
+	recipe = {
+		{'default:aspen_wood', 'default:aspen_wood', 'default:aspen_wood'},
+		{'group:stick', '', 'group:stick'},
+		{'group:stick', '', 'group:stick'},
+	}
+})
+
+minetest.register_craft({
+	output = "furniture:clay_table",
+	recipe = {
+		{'default:clay', 'default:clay', 'default:clay'},
+		{'group:stick', '', 'group:stick'},
+		{'group:stick', '', 'group:stick'},
+	}
 })
