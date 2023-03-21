@@ -1,3 +1,5 @@
+# FIRST UP: NODE DEFS
+
 minetest.register_node("furniture:staff", {
 	description = "Staff",
 	tiles = {"default_wood.png", "default_wood.png", "default_wood.png"},
@@ -64,4 +66,44 @@ minetest.register_node("furniture:clay_staff", {
 	paramtype2 = "facedir",
 	groups = {dig_immediate = 2, flammable = 0},
 	on_place = minetest.rotate_node,
+})
+
+
+
+# NEXT, CRAFTING DEFS
+
+minetest.register_craft({
+	output = "furniture:staff 4",
+	recipe = {
+		{'default:wood'},
+		{'default:wood'},
+		{'default:wood'}
+	}
+})
+
+minetest.register_craft({
+	output = "furniture:pine_staff 4",
+	recipe = {
+		{'default:pine_wood'},
+		{'default:pine_wood'},
+		{'default:pine_wood'}
+	}
+})
+
+minetest.register_craft({
+	output = "furniture:aspen_staff 4",
+	recipe = {
+		{'default:aspen_wood'},
+		{'default:aspen_wood'},
+		{'default:aspen_wood'}
+	}
+})
+
+minetest.register_craft({
+	output = "furniture:clay_staff 4",
+	recipe = {
+		{'default:clay'},
+		{'default:clay'},
+		{'default:clay'}
+	}
 })
