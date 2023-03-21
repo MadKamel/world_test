@@ -50,7 +50,7 @@ minetest.register_node("furniture:aspen_staff", {
 })
 
 minetest.register_node("furniture:clay_staff", {
-	description = "Staff",
+	description = "Carved Staff",
 	tiles = {"default_clay.png", "default_clay.png", "default_clay.png"},
 	drawtype = "nodebox",
 	paramtype = "light",
