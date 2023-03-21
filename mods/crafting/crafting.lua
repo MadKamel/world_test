@@ -19,3 +19,9 @@ minetest.register_craft({
 		{"group:stick", "group:stick"}
 	}
 })
+
+minetest.register_craft({
+	output = "default:clay",
+	type = "shapeless",
+	recipe = {{"group:rock", "group:rock"}}
+})
