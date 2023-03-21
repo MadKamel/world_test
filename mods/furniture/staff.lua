@@ -11,6 +11,6 @@ minetest.register_node("furniture:staff", {
 		},
 	},
 	paramtype2 = "facedir",
-	groups = {dig_immediate = 3, falling_node = 1, flammable = 1},
+	groups = {dig_immediate = 2, flammable = 1},
 	on_place = minetest.rotate_node,
 })
