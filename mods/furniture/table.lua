@@ -19,5 +19,5 @@ minetest.register_node("furniture:wood_table", {
 			{-0.3,-0.2,0.3, 0.3,-0.1,0.4},
 		},
 	},
-	groups = {dig_immediate = 3, falling_node = 1, flammable = 1},
+	groups = {dig_immediate = 2, falling_node = 1, flammable = 1},
 })
