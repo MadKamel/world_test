@@ -11,3 +11,11 @@ minetest.register_craft({
 		{"default:dry_shrub"},
 	}
 })
+
+minetest.register_craft({
+	output = "default:wood",
+	recipe = {
+		{"group:stick", "group:stick"},
+		{"group:stick", "group:stick"}
+	}
+})
