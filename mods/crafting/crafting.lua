@@ -21,7 +21,7 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "default:clay",
+	output = "default:clay_lump",
 	type = "shapeless",
 	recipe = {{"group:rock", "group:rock"}}
 })
